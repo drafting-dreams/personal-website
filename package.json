@@ -46,5 +46,10 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "vue": {
+    "devServer": {
+      "host": "127.0.0.1"
+    }
+  }
 }
