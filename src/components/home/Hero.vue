@@ -19,7 +19,7 @@ export default {
 
 <style scoped lang="sass">
 .hero
-  z-index: 12
+  z-index: 15
   height: 100vh
   position: relative
   background: url("../../assets/home1.jpg") center center no-repeat fixed

@@ -45,7 +45,7 @@
       .responsivePadding
         padding: 20px 5px 20px 5px
   #otherNav
-    z-index: 10
+    z-index: 14
     padding: 0 40px 0 40px
     background-color: black
     opacity: 0.8
