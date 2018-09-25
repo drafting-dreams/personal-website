@@ -79,14 +79,6 @@
         font-size: 0.8rem
       .first
         font-size: 1.5rem
-    /*@media screen and (max-width: 1020px)*/
-      /*#otherNav*/
-        /*justify-content: center*/
-        /*padding: 0*/
-        /*.first*/
-          /*display: none*/
-        /*.responsivePadding*/
-          /*padding: 20px 5px 20px 5px*/
 </style>
 
 <script>

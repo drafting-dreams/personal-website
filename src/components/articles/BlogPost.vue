@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article :class="scrollingState">
     <div class="postImg"
          :style="{ paddingBottom: bg.padBtm, backgroundImage: 'url('+bg.url+')', backgroundColor: bg.color ? bg.color : 'black' }"></div>
     <div class="roundWrapper">
@@ -23,18 +23,20 @@ export default {
     tags: Array,
     title: String,
     description: String,
-    date: String
+    date: String,
+    scrollingState: String
   }
-// computed: {
-//   imgStyle: function () {
-//     this.bg.padB
-//   }
-// }
 }
 </script>
 
 <style scoped lang="sass">
+  .scrollingUp
+    transform: matrix3d(1,0,0.00,0,0.00,0.98,0.17,-0.00015,0,-0.17,0.98,0,0,0,0,1)
+  .scrollingDown
+    transform: matrix3d(1,0,0.00,0,0.00,0.98,0.17,0.00015,0,-0.17,0.98,0,0,0,0,1)
   article
+    transform: rotateX(0)
+    transition: transform .4s
     font-size: 14px
     display: flex
     flex-direction: column
@@ -43,10 +45,15 @@ export default {
     border-bottom: 0
     box-shadow: 0 7px 10px #dadada
     border-radius: 0 0 10px 10px
+    cursor: pointer
+    &:hover
+      .postImg
+        background-size: 110% 110%
     .postImg
-      background: no-repeat
+      background: no-repeat center center
       padding-bottom: 33.3%
       background-size: 100% 100%
+      transition: background-size .2s ease-out
     .roundWrapper
       font-size: inherit
       border-radius: 10px 10px 0 0
