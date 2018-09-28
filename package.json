@@ -49,6 +49,8 @@
     "not ie <= 8"
   ],
   "vue": {
-
+    "devServer": {
+      "proxy": "http://localhost:8080"
+    }
   }
 }

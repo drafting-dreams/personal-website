@@ -1,10 +1,10 @@
 <template>
-  <div class="hero">
+  <section class="hero">
     <div class="abs">
       <Navbar style="background-color: rgba(1, 1, 1, 0)" :needToHide="false"></Navbar>
       <section class="intro"></section>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
