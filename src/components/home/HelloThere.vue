@@ -33,7 +33,7 @@
 <style scoped lang="sass">
   #helloThere
     font-size: 14px
-    padding-top: 90px
+    padding: 90px 0 30px 0
     text-align: left
     header
       position: relative
@@ -44,7 +44,7 @@
       img
         position: absolute
         margin-right: -1rem
-        right: 85%
+        right: 84%
         top: -16%
         width: 20%
         clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%)
@@ -64,4 +64,22 @@
     .closeMark
       right: .3em
       bottom: .1em
+  @media screen and (max-width: 600px)
+    #helloThere
+      font-size: 10px
+      padding-top: 30px
+      header
+        padding: 1em 0
+        margin: 0 1em
+        img
+          width: 35%
+          z-index: -1
+          top: -20%
+          left: 78%
+          filter: sepia(1) hue-rotate(220deg) opacity(25%)
+      p
+        margin-left: 2em
+        margin-right: 2em
+      .quotationMark
+        display: none
 </style>
